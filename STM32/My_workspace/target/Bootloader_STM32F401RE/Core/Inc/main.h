@@ -91,6 +91,9 @@ void bootloader_send_nack(void);
 uint8_t bootloader_verify_crc (uint8_t *pData, uint32_t len, uint32_t crc_host);
 uint8_t get_bootloader_version(void);
 void bootloader_uart_write_data(uint8_t *pBuffer,uint32_t len);
+uint16_t get_mcu_chip_id(void);
+uint8_t get_flash_rdp_level(void);
+uint8_t execute_flash_erase(uint8_t sector_number , uint8_t number_of_sector);
 
 /* USER CODE END EFP */
 
